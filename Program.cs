@@ -1,4 +1,5 @@
 ﻿
+using LogicaalProblems;
 using LogicalPrograms;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,7 @@ namespace LogicalPrgrams
             Console.WriteLine(".............................................");
             Console.WriteLine("1 For: Fibonacci Series ");
             Console.WriteLine("2 For: Perfect Number ");
+            Console.WriteLine("3 For: Prime Number ");
             int selection = Convert.ToInt32(Console.ReadLine());
             switch (selection)
             {
@@ -28,8 +30,12 @@ namespace LogicalPrgrams
                     PerfectNumber PerfectNum = new PerfectNumber();
                     PerfectNum.CheckPerfectNumber();
                     break;
+                case 3:
+                    PrimeNo Primenumber = new PrimeNo();
+                    Primenumber.CheckPrimeNumber();
+                    break;
                 default:
-                    Console.WriteLine("Invalid Selection.select 1");
+                    Console.WriteLine("Invalid Selection");
                     break;
             }
             Console.ReadLine();

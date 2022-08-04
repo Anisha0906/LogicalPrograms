@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LogicalPrgrams
+namespace LogicalPrograms
 {
    public  class Program
     {
@@ -19,6 +19,7 @@ namespace LogicalPrgrams
             Console.WriteLine("1 For: Fibonacci Series ");
             Console.WriteLine("2 For: Perfect Number ");
             Console.WriteLine("3 For: Prime Number ");
+            Console.WriteLine("4 For: Reverse Number ");
             int selection = Convert.ToInt32(Console.ReadLine());
             switch (selection)
             {
@@ -33,6 +34,10 @@ namespace LogicalPrgrams
                 case 3:
                     PrimeNo Primenumber = new PrimeNo();
                     Primenumber.CheckPrimeNumber();
+                    break;
+                case 4:
+                    ReverseNumber reverseNum = new ReverseNumber();
+                    reverseNum.Reversenumber();
                     break;
                 default:
                     Console.WriteLine("Invalid Selection");
